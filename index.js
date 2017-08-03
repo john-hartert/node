@@ -12,8 +12,7 @@ rl.question('what is the filename?', (filename) => {
     fs.readFile(filename, (err, buffer) => {
         if (err) {
             console.log(err.message);
-            return;
-            
+            return;  
         }
         console.log('i found it!');
         let content = buffer.toString();
